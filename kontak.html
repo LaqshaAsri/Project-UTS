@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak | Team Medicine</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style T.css" />
+    <link rel="icon" href="Assets/logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3681abcb52.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="padding-top: 55px">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="Assets/logo.png" alt="Logo" class="d-inline-block align-text-top" style="width: 35px; margin-top: -4px" />
+          Team <strong>Medicine</strong></a
+        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+            <a class="nav-link" href="Tentang.html">Tentang</a>
+            <a class="nav-link" href="layanan.html">Layanan</a>
+            <a class="nav-link" href="team.html">Tim</a>
+            <a class="nav-link active" href="kontak.html">Kontak</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="contact-header text-center">
+      <div class="container">
+        <h1><span style="color: white">Buat Janji Konsultasi</span></h1>
+        <p class="lead">Isi formulir di bawah ini dan tim kami akan segera memproses janji temu Anda.</p>
+      </div>
+    </header>
+
+    <main class="container mb-5">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <div class="contact-card">
+            <h2 class="section-title text-primary-600 mb-4">Detail Janji Temu</h2>
+
+            <form id="appointmentForm">
+              <div class="mb-3">
+                <label for="doctorSelect" class="form-label fw-medium">Pilih Dokter/Ners yang Dituju <span class="text-danger">*</span></label>
+                <select class="form-select" id="doctorSelect" required>
+                  <option value="" disabled selected>-- Pilih Tim Medis --</option>
+                  <option value="Dr. Arsad, Sp.PD">Dr. Arsad, Sp.PD (Penyakit Dalam)</option>
+                  <option value="Dr. Laqsha, Sp.PD">Dr. Laqsha, Sp.PD (Penyakit Dalam)</option>
+                  <option value="Dr. Juan, Sp.KJ">Dr. Juan, Sp.KJ (Psikiater)</option>
+                  <option value="Ners Maulana, S.Kep">Ners Maulana, S.Kep (Perawat Senior)</option>
+                  <option value="Ners Felix, S.Kep">Ners Felix, S.Kep (Perawat)</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="fullName" class="form-label fw-medium">Nama Lengkap Pasien <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="fullName" placeholder="Masukkan nama lengkap Anda" required />
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="email" class="form-label fw-medium">Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="contoh@email.com" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label fw-medium">Nomor Telepon <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="phone" placeholder="08xxxxxxxxxx" required />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="date" class="form-label fw-medium">Tanggal Preferensi <span class="text-danger">*</span></label>
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="consultType" class="form-label fw-medium">Jenis Konsultasi</label>
+                  <select class="form-select" id="consultType">
+                    <option value="Tatap Muka" selected>Tatap Muka (Offline)</option>
+                    <option value="Telekonsultasi">Telekonsultasi (Online)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="form-label fw-medium">Keluhan Singkat/Tujuan Konsultasi <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Contoh: Sakit kepala berkepanjangan dan susah tidur..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-100">Kirim Permintaan Janji</button>
+
+              <div id="statusMessage" class="mt-3 text-center d-none alert alert-success" role="alert">Permintaan janji Anda berhasil dikirim! Kami akan menghubungi Anda dalam 1x24 jam.</div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <h2 class="section-title mb-4">Informasi Kontak & Lokasi</h2>
+
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="info-box d-flex align-items-start">
+                <i class="fas fa-map-marker-alt fa-2x me-3 mt-1"></i>
+                <div>
+                  <p class="fw-bold mb-0">Alamat Klinik Utama</p>
+                  <small>Jl. Kesehatan Sentosa No. 10, Jakarta Pusat 10310, Indonesia</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-12">
+              <div class="info-box d-flex align-items-start">
+                <i class="fas fa-phone fa-2x me-3 mt-1"></i>
+                <div>
+                  <p class="fw-bold mb-0">Layanan Pelanggan</p>
+                  <small>(021) 500-1234 (Senin - Jumat, 08:00 - 17:00)</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-12">
+              <div class="info-box d-flex align-items-start">
+                <i class="fas fa-envelope fa-2x me-3 mt-1"></i>
+                <div>
+                  <p class="fw-bold mb-0">Email Informasi</p>
+                  <small>info@teammedicine.com</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-4">
+              <h5 class="fw-bold mb-2">Lokasi Kami</h5>
+              <div class="card-custom bg-white p-3 text-center" style="height: 200px; border: 1px solid #ddd">
+                <p class="text-muted small my-5"><a href="https://maps.app.goo.gl/M3nxdtsT1mDGb7Pn9">https://maps.app.goo.gl/M3nxdtsT1mDGb7Pn9</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content" style="display: flex; justify-content: center; align-items: center; padding-top: 15px">
+        <p>© 2025 Team Medicine | Juan</p>
+      </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

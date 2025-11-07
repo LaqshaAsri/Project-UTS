@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Informasi Administrasi | Team Medicine</title>
+    <script src="https://kit.fontawesome.com/3681abcb52.js" crossorigin="anonymous"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style J.css" />
+    <link rel="icon" href="Assets/logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="Assets/logo.png" alt="Logo" class="d-inline-block align-text-top" style="width: 35px; margin-top: -2px" />
+          Team <strong>Medicine</strong></a
+        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+            <a class="nav-link" href="Tentang.html">Tentang</a>
+            <a class="nav-link active" href="layanan.html">Layanan</a>
+            <a class="nav-link" href="team.html">Tim</a>
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <header class="text-center mb-5">
+        <h1 class="display-5 fw-bold" style="color: #0b7285">Panduan Administrasi Pasien 📄</h1>
+        <p class="lead text-secondary">Informasi penting mengenai prosedur janji temu, pembayaran, dan kerjasama asuransi.</p>
+      </header>
+
+      <section id="prosedur-janji" class="mb-5 p-4 rounded-3 shadow-sm bg-primary-light">
+        <h2 class="h4 mb-4 text-center" style="color: #0b7285"><i class="fas fa-calendar-alt me-2"></i> Prosedur & Aturan Janji Temu</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <ol class="list-group list-group-flush custom-list">
+              <li class="list-group-item d-flex align-items-center"><span class="badge me-3" style="color: black">1</span> Reservasi: Janji temu dianjurkan dilakukan minimal H-1 melalui formulir kontak atau WhatsApp.</li>
+              <li class="list-group-item d-flex align-items-center"><span class="badge me-3" style="color: black">2</span> Kedatangan: Pasien diharapkan tiba 15 menit sebelum jadwal konsultasi untuk proses *check-in* administrasi.</li>
+              <li class="list-group-item d-flex align-items-center">
+                <span class="badge me-3" style="color: black">3</span> Pembatalan: Pembatalan atau penjadwalan ulang wajib dikonfirmasi minimal 4 jam sebelum waktu janji yang ditentukan.
+              </li>
+              <li class="list-group-item d-flex align-items-center"><span class="badge me-3" style="color: black">4</span> Dokumen: Siapkan Kartu Tanda Penduduk (KTP) dan/atau kartu asuransi yang relevan saat kedatangan.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="pembayaran-asuransi" class="p-5 rounded-3 shadow-lg bg-white">
+        <div class="row">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h2 class="h4 mb-3" style="color: #0b7285"><i class="fas fa-money-check-alt me-2"></i> Pilihan Pembayaran</h2>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item d-flex align-items-center">
+                <i class="fas fa-credit-card me-3 text-success"></i>
+                <small>Kartu Debit & Kredit (Visa/Mastercard)</small>
+              </div>
+              <div class="list-group-item d-flex align-items-center">
+                <i class="fas fa-university me-3 text-success"></i>
+                <small>Transfer Bank (BCA, Mandiri, BRI)</small>
+              </div>
+              <div class="list-group-item d-flex align-items-center">
+                <i class="fas fa-money-bill-wave me-3 text-success"></i>
+                <small>Tunai (Hanya untuk biaya di bawah Rp 1.000.000)</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="h4 mb-3" style="color: #0b7285"><i class="fas fa-handshake me-2"></i> Mitra Asuransi & Korporat</h2>
+            <p class="small text-muted">Kami berupaya mempermudah akses layanan melalui kerjasama dengan penyedia asuransi terkemuka.</p>
+            <div class="row row-cols-2 g-3">
+              <div class="col">
+                <span class="badge bg-warning text-dark p-2 w-100">AXA Mandiri</span>
+              </div>
+              <div class="col">
+                <span class="badge bg-warning text-dark p-2 w-100">Prudential Indonesia</span>
+              </div>
+              <div class="col">
+                <span class="badge bg-warning text-dark p-2 w-100">BPJS Non-Mandiri (Kelas 1)</span>
+              </div>
+              <div class="col">
+                <span class="badge bg-warning text-dark p-2 w-100">Adira Insurance</span>
+              </div>
+            </div>
+            <blockquote class="blockquote small mt-3 border-start border-3 ps-3 text-muted">
+              <p class="mb-0">Mohon konfirmasi status polis Anda dengan pihak administrasi sebelum hari janji temu.</p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content" style="display: flex; justify-content: center; align-items: center">
+        <p>© 2025 Team Medicine | Juan</p>
+      </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
